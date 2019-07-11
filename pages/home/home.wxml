@@ -1,3 +1,4 @@
 <!--pages/home/home.wxml-->
 <view class='title'>pages/home/home.wxml</view>
 <button size='mini'>点击</button>
+<text>001</text>
