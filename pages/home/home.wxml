@@ -1,3 +1,11 @@
 <!--pages/home/home.wxml-->
-<view class='title'>pages/home/home.wxml</view>
-<button size='mini'>点击</button>
+<view>数据绑定</view>
+<text>{{msg}}</text>
+<view>列表渲染</view>
+<block wx:for="{{list}}" wx:key="id">
+  <view>{{index}} -- {{item.name}}</view>
+</block>
+<view>事件监听</view>
+<view>{{conter}}</view>
+<button size='mini' bindtap='onAdd'>+</button>
+<button size='mini' bindtap='onDiff'>-</button>

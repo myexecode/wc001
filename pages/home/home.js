@@ -5,7 +5,28 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    msg : 'yangzi',
+    list : [
+      {
+        id : 0,
+        name : 'a'
+      },
+      {
+        id: 2,
+        name: 'b'
+      }
+    ],
+    conter : 0
+  },
+  onAdd(){
+    this.setData({
+      conter : ++this.data.conter
+    })
+  },
+  onDiff() {
+    this.setData({
+      conter: --this.data.conter
+    })
   },
 
   /**
