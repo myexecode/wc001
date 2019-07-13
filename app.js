@@ -1,10 +1,14 @@
 App({
-
+  test: '#b9ab64',
   /**
    * 当小程序初始化完成时，会触发 onLaunch（全局只触发一次）
    */
   onLaunch: function () {
-    
+    this.test = '#fd1c1c';
+    wx.setNavigationBarColor({
+      frontColor: '#ffffff',
+      backgroundColor : this.test
+    })
   },
 
   /**

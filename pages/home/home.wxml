@@ -1,3 +1,4 @@
 <!--pages/home/home.wxml-->
 <view class='title'>pages/home/home.wxml</view>
-<button size='mini'>点击</button>
+<button size='mini' style='color:{{appColor}};'>点击</button>
+<navigator url='/pages/about/about'>about</navigator>
