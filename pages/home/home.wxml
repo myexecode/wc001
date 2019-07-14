@@ -1,3 +1,10 @@
 <!--pages/home/home.wxml-->
-<view class='title'>pages/home/home.wxml</view>
-<button size='mini'>点击</button>
+<view class='img_wrap' id='taget_img_wrap'>
+  <image src='{{qCodeBg}}' mode='center'></image>
+  <view class='share_btn' bindtap='onCreateQCodeToShare'>点击</view>
+</view>
+<view class='canvas_wrap' id='canvas_wrap' hidden='{{isHideShow}}'>
+  <canvas canvas-id="share_canvas" style="width:700rpx;height:900rpx"></canvas>
+  <view class='save_btn' bindtap='onSaveInviteCard'>保存</view>
+</view>
+<button size='mini' class='off_btn' bindtap='onOff'>off</button>
