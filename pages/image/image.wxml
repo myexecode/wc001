@@ -1,0 +1,31 @@
+<!--pages/image/image.wxml-->
+<!-- 默认大小：320 * 240 -->
+<image />
+<!-- src : 本地路径 / 网络地址 -->
+<image src='/assets/images/security_code.jpg'/>
+<image src='https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg'/>
+
+<!-- 选择本地图片并展示 -->
+<button bindtap='onChooseAlumImg'>选择图片</button>
+<image src='{{alumImg}}'/>
+
+<!-- mode模式 -->
+<image 
+  src='https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg'
+  mode='center'
+/>
+
+<!-- show-menu-by-longpress: 2.7.0版本以上才支持 -->
+<image 
+  src='https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg'
+  show-menu-by-longpress
+/>
+
+<!-- bindload图片加载完成事件 和 lazy-load懒加载效果 -->
+<image
+  wx:for="{{10}}"
+  wx:key="index || id"
+  bindload='imgLoadFn'
+  lazy-load
+  src='https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg'
+/>

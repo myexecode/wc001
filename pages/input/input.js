@@ -1,11 +1,11 @@
-// pages/home/home.js
+// pages/input/input.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    
+
   },
 
   /**

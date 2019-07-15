@@ -1,11 +1,20 @@
-// pages/home/home.js
+// pages/scroll/scroll.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    
+
+  },
+  onscroll(event){
+    console.log('滚动...' , event);
+  },
+  onscrollTop(event){
+    console.log('顶部：',event)
+  },
+  onscrollBottom(event){
+    console.log('底部:',event)
   },
 
   /**

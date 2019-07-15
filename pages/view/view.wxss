@@ -1,0 +1,18 @@
+/* pages/view/view.wxss */
+.box1{
+  width: 100px;
+  height: 100px;
+  background: #ccc;
+  margin: 20px;
+}
+.hover_view{
+  background: #f00;
+}
+.wrap{
+  width: 200px;
+  height: 200px;
+  background: pink;
+}
+.hover_wrap{
+  background: orange;
+}

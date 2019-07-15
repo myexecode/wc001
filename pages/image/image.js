@@ -1,11 +1,23 @@
-// pages/home/home.js
+// pages/image/image.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    
+    alumImg : ''
+  },
+  imgLoadFn(){
+    console.log('load')
+  },
+  onChooseAlumImg(){
+    wx.chooseImage({
+      success: (res) => {
+        this.setData({
+          alumImg : res.tempFilePaths
+        })
+      }
+    })
   },
 
   /**
