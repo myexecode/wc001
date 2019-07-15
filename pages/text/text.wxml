@@ -1,0 +1,11 @@
+<!--pages/text/text.wxml-->
+<text>小程序 \n </text>
+<text>小程序 \n </text>
+
+<text selectable>禁止长按选中文本 \n </text>
+<text space='nbsp'>正常默认文本空格的大小hello word \n</text>
+<text space='ensp'>半个中文字符的文本空格hello word \n</text>
+<text space='emsp'>一个中文字符的文本空格hello word \n</text>
+
+<text>不解码 5 &gt; 3 \n</text>
+<text decode>解码 5 &gt; 3</text>

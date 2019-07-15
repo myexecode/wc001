@@ -1,0 +1,23 @@
+/* pages/scroll/scroll.wxss */
+.cantaner1{
+  background:pink;
+  white-space: nowrap;
+}
+.item1{
+  width: 100px;
+  height: 100px;
+  background: red;
+  margin: 10px;
+  display: inline-block;
+}
+
+.cantaner2{
+  height: 200px;
+  background: #ff0;
+  margin: 10px auto;
+}
+.item2{
+  height: 100px;
+  margin: 10px;
+  background: orange;
+}

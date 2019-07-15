@@ -1,0 +1,22 @@
+<!--pages/scroll/scroll.wxml-->
+<!-- 水平滚动 -->
+<scroll-view class='cantaner1' scroll-x>
+  <view wx:for="{{10}}" class='item1'>{{item}}</view>
+</scroll-view>
+
+<!-- 上下滚动 -->
+<scroll-view class='cantaner2' scroll-y>
+  <view wx:for="{{10}}" class='item2'>{{item}}</view>
+</scroll-view>
+
+<!-- 滚动事件 -->
+<scroll-view 
+  class='cantaner2' scroll-y 
+  bindscroll="onscroll" 
+  bindscrolltoupper="onscrollTop"
+  bindscrolltolower="onscrollBottom"
+>
+  <view wx:for="{{10}}" class='item2'>{{item}}</view>
+</scroll-view>
+
+

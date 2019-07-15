@@ -1,0 +1,12 @@
+<!--pages/input/input.wxml-->
+<input />
+
+<!-- 默认值 -->
+<input placeholder='请输入...'/>
+
+<!-- 设置键盘 -->
+<input type='text' confirm-type='go'/>
+<input type='text' confirm-type='next'/>
+<input type='text' confirm-type='search'/>
+<input type='text' confirm-type='send'/>
+<input type='text' confirm-type='done'/>

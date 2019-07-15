@@ -1,0 +1,22 @@
+<!-- 基本使用 -->
+<view>块元素</view>
+
+<!-- hover-class -->
+<view hover-class="hover_view" class="box1">块</view>
+<view 
+  hover-class='hover_view'
+  hover-start-time='{{500}}'
+  hover-stay-time='{{0}}' 
+  class='box1'
+>块</view>
+<view class='wrap' hover-class='hover_wrap'>
+  <view class='box1'
+    hover-class='hover_view'
+  >块</view>
+</view>
+<view class='wrap' hover-class='hover_wrap'>
+  <view class='box1'
+    hover-class='hover_view'
+    hover-stop-propagation
+  >阻止hover 冒泡</view>
+</view>

@@ -1,0 +1,5 @@
+/* pages/button/button.wxss */
+.btn_hover{
+  background: #f00;
+  color: #fff;
+}
