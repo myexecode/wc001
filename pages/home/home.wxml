@@ -1,3 +1,11 @@
 <!--pages/home/home.wxml-->
 <view class='title'>pages/home/home.wxml</view>
-<button size='mini'>点击</button>
+<button size='mini' bindtap="onCreateCanvas">点击</button>
+<view wx:for="{{100}}" class='for' wx:key="index">
+  <view>{{item}}</view>
+</view>
+<view class='canvas_wrap_wrap' catchtouchmove='{{true}}'>
+<view class='canvas_wrap'>
+<canvas style="width: 150px; height: 200px;" canvas-id="firstCanvas"></canvas>
+</view>
+</view>

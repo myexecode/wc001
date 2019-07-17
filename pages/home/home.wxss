@@ -1,4 +1,29 @@
 /* pages/home/home.wxss */
+page{
+  background: #fff;
+}
 .title{
   color: red;
+}
+.for view{
+  height: 50px;
+  margin: 10px;
+  background: pink;
+  font-size: 30px;
+}
+.canvas_wrap_wrap{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0,0.6);
+}
+.canvas_wrap{
+  width:150px;
+  height: 200px;
+  margin: 50px auto;
+  background: #ccc;
+  border-radius: 6px;
+  overflow: hidden;
 }
