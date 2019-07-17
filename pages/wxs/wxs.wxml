@@ -1,0 +1,10 @@
+<!--pages/wxs/wxs.wxml-->
+<wxs src="../../wxs/test.wxs" module="test"/>
+
+<view>{{test.msg}}</view>
+
+<view>{{test.sum(10,20)}}</view>
+
+<view>{{test.numFormat(num,3)}}</view>
+
+<view>{{test.timeFormat(t)}}</view>

@@ -1,0 +1,15 @@
+
+module.exports = {
+  msg: "hello word",
+  sum: function (a, b) {
+    return a + b;
+  },
+  numFormat : function(floatNum,n){
+    n = n || 2;
+    return floatNum.toFixed(n);
+  },
+  timeFormat : function(t){
+    var objt = getDate(t);
+    return objt.getFullYear() + '-' + (objt.getMonth() + 1) + '-' + objt.getDate();
+  }
+};
