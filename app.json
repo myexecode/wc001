@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/capture-catch-bind/capture-catch-bind",
     "pages/home/home"
   ],
   "sitemapLocation": "sitemap.json"

@@ -1,0 +1,6 @@
+<!--pages/capture-catch-bind/capture-catch-bind.wxml-->
+<view class='view1' capture-bind:tap="onCaptreView1" bindtap='onBindView1'>
+    <view class='view2' capture-bind:tap="onCaptreView2" bindtap='onBindView2'>
+        <view class='view3' capture-bind:tap="onCaptreView3" catchtap='onBindView3'></view>
+    </view>
+</view>
