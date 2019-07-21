@@ -1,0 +1,13 @@
+<!--components/my-tabbar/my-tabbar.wxml-->
+<view class='tabar_wrap'>
+    <block wx:for="{{propList}}" wx:key="{{id || index}}">
+        <view 
+            class='tabbar_item {{currentIndex == index ? "item_active" : ""}}'
+            bindtap='onChangeTab'
+            data-tab="{{item}}"
+            data-index="{{index}}"
+        >
+            <text class='item_txt'>{{item.title}}</text>
+        </view>
+    </block>
+</view>

@@ -1,0 +1,4 @@
+/* components/my-cop/my-cop.wxss */
+.title{
+    font-size: 30rpx;
+}

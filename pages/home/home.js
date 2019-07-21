@@ -1,66 +1,42 @@
 // pages/home/home.js
 Page({
 
-  /**
-   * 页面的初始数据
-   */
-  data: {
+    /**
+     * 页面的初始数据
+     */
+    data: {
+        price : 0,
+        num : 1,
+        tabList : [
+            {title : "苹果"},
+            { title: "西瓜" },
+            { title: "香蕉" },
+            { title: "桃子" }
+        ],
+        isShowTmp : true
+    },
+    onAddEvent() {
+        // console.log('========')
+        let { price, num } = this.data;
+        this.setData({
+            price: ++price,
+            num: ++num
+        })
+    }, 
+    onTabarChangeEvent(e){
+        console.log(e)
+    },
+    onChangeSelectCop(){
+        let oSelect = this.selectComponent('#select_id'); // 获取组件对象
 
-  },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  }
+        // 调用组件内的函数，改变组件数据
+        oSelect.incrementFn(20);
+    },
+    onDeletTmp(){
+        let { isShowTmp } = this.data;
+        console.log(isShowTmp,'onDeletTmp')
+        this.setData({
+            isShowTmp: !isShowTmp
+        })
+    }
 })

@@ -1,3 +1,9 @@
 {
-  "usingComponents": {}
+    "usingComponents": {
+        "my-cop": "/components/my-cop/my-cop",
+        "my-tabbar": "/components/my-tabbar/my-tabbar",
+        "my-select": "/components/my-select/my-select",
+        "my-slot": "/components/my-slot/my-slot",
+        "my-temp": "/components/temp/temp"
+    }
 }

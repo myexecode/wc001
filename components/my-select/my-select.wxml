@@ -1,0 +1,2 @@
+<!--components/my-select/my-select.wxml-->
+<view>组件内数据：{{poter}}</view>

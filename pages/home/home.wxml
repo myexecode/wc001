@@ -1,3 +1,38 @@
 <!--pages/home/home.wxml-->
-<view class='title'>pages/home/home.wxml</view>
-<button size='mini'>点击</button>
+<view class='title'>index 页面</view>
+
+<!-- <my-cop /> -->
+
+<!--自定义样式 -->
+<my-cop my-class="red" btn="{{false}}"/>
+<my-cop my-class="pink" btn="{{false}}"/>
+<my-cop my-class="orange" btn="{{false}}"/>
+
+<!-- 给组件传参 ， 自定义事件 -->
+<view>{{price}}</view>
+<my-cop bind:myCopAddEvent="onAddEvent" prop-a="{{num}}" btn="{{true}}"/>
+
+<!-- 自定义组件 tabbar 练习 -->
+<my-tabbar bind:tabarChangeEvent="onTabarChangeEvent" prop-list="{{tabList}}" />
+
+<!-- 获取组件对象， 改变组件内数据的方法 -->
+<button bindtap='onChangeSelectCop'>点击修改组件内数据</button>
+<my-select id="select_id" />
+
+<!-- 组件插槽 slot 的使用 -->
+<!-- 
+    多插槽的使用注意事项：
+    1 给每一个插槽起一个名字：name
+    2 必须在Component对象中添加一个选项 : options -> multipleSlots : true
+ -->
+<my-slot>
+    <slider slot="slot1"></slider>
+    <button slot="slot2">btn</button>
+    <text slot="slot3">test</text>
+</my-slot>
+
+<!-- 组件模板 -->
+<button size='mini' bindtap='onDeletTmp'>删除组件</button>
+<block wx:if="{{isShowTmp}}">
+    <my-temp />
+</block>

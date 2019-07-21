@@ -1,0 +1,5 @@
+<!--components/my-cop/my-cop.wxml-->
+<view class='title my-class'>
+    {{msg}}
+</view>
+<button size='mini' bindtap='onAddEvent' wx:if="{{btn}}">点击+{{propA}}</button>

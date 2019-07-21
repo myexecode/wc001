@@ -1,0 +1,19 @@
+/* components/my-tabbar/my-tabbar.wxss */
+.tabar_wrap{
+    height: 88rpx;
+    line-height: 88rpx;
+    display: flex;
+    background: #ccc;
+    /* line-height: 80rpx; */
+}
+.tabbar_item{
+    flex: 1;
+    text-align: center;
+}
+.item_active{
+    color: #f00;
+}
+.item_active .item_txt{
+    padding: 15rpx 20rpx;
+    border-bottom: 6rpx solid #f00;
+}
