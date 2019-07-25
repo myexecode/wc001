@@ -1,13 +1,6 @@
 {
   "pages": [
-    "pages/scroll/scroll",
-    "pages/input/input",
-    "pages/image/image",
-    "pages/view/view",
-    "pages/button/button",
-    "pages/text/text",
-    "pages/home/home",
-    "pages/about/about"
+    "pages/home/home"
   ],
   "sitemapLocation": "sitemap.json"
 }
