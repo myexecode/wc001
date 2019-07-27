@@ -1,4 +1,8 @@
 // pages/home/home.js
+
+import utils from "../../utils/utils.js";
+
+const app  = getApp();
 Page({
 
   /**
@@ -12,7 +16,25 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+      console.log(utils.TOKEN)
+  },
+  onLogin(){
+      // 从缓存中获取登录token
+      let token = wx.getStorageSync(utils.TOKEN);
+      // 判断是否有token
+      if (token && token.length > 0) {
+          // 判断token是否过期
+          let token_res = utils.checkTokenFn(token);
+          if (token_res) {
+              console.log("已经登录")
+          } else {
+              console.log("token 过期重新登录")
+              utils.loginFn(); // 执行登录
+          }
+      } else {
+          console.log("执行登录")
+          utils.loginFn(); // 执行登录
+      }
   },
 
   /**
