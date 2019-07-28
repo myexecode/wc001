@@ -1,3 +1,9 @@
 {
-  "usingComponents": {}
+    "navigationStyle": "custom",
+    "usingComponents": {
+        "m-navbar": "/components/m-navbar/m-navbar",
+        "m-refresh": "/components/m-refresh/m-refresh",
+        "m-list" : "./children/m-list/m-list",
+        "m-tabbar": "/components/m-tabbar/m-tabbar"
+    }
 }

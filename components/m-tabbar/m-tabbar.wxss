@@ -1,0 +1,16 @@
+.tabbar_wrap{
+    width: 100%;
+    background: #fff;
+    height: 110rpx;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.item{
+    flex: 1;
+    height: 100%;
+    text-align: center;
+}
+.item_active{
+    background: #ff5777;
+}

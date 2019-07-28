@@ -1,0 +1,6 @@
+<view class='nav_bar'>
+    <view class='nav_top' style='height:{{ navTopH+"px" }};'></view>
+    <view class='nav_title'>
+        <text>{{ navTitle }}</text>
+    </view>
+</view>

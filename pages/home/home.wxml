@@ -1,3 +1,12 @@
-<!--pages/home/home.wxml-->
-<view class='title'>pages/home/home.wxml</view>
-<button size='mini'>点击</button>
+<view class='home_page'>
+    <!-- 自定义导航条 -->
+    <m-navbar />
+
+    <!-- 内容区 -->
+    <m-refresh class="refresh_wrap">
+        <m-list />
+    </m-refresh>
+
+    <!-- 底部tabbar -->
+    <m-tabbar />
+</view>

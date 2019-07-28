@@ -1,0 +1,7 @@
+<view class='content'>
+    <view class='list'>
+        <block wx:for="{{100}}" wx:key="{{ id || index }}">
+            <view>{{ index }} -- {{ msg }}</view>
+        </block>
+    </view>
+</view>

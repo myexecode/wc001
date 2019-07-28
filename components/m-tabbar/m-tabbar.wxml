@@ -1,0 +1,5 @@
+<view class='tabbar_wrap'>
+    <view class='item item_active'>a</view>
+    <view class='item'>b</view>
+    <view class='item'>c</view>
+</view>

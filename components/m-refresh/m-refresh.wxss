@@ -1,0 +1,16 @@
+.scroll_view_wrap{
+    height: 100%;
+    background: #ccc;
+    overflow: hidden;
+}
+.scroll_inner{
+    /* transform: translateY(-50px); */
+    background: #fff;
+}
+.pull_down_tip{
+    height: 50px;
+    font-size: 28rpx;
+    background: #ccc;
+    text-align: center;
+    line-height: 50px;
+}

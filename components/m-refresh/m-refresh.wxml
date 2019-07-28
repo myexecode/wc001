@@ -1,0 +1,16 @@
+<scroll-view scroll-y 
+    class='scroll_view_wrap'
+    bindtouchstart='handletouchstart' 
+    bindtouchmove='handletouchmove' 
+    bindtouchend='handletouchend' 
+    bindtouchcancel='handletouchcancel'
+>
+    <view 
+        class="scroll_inner"
+        style='transform: translateY({{ offsetHeight }}px);transition: {{ tstNum }}s transform;'
+    >
+        <view class='pull_down_tip'>{{ pullDownTip }}</view>
+        <slot />
+    </view>
+    
+</scroll-view>
