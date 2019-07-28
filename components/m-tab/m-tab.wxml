@@ -1,0 +1,14 @@
+<view class='tab_box'>
+
+    <block wx:for="{{ dataList }}" wx:key="{{ id || index }}">
+        <view 
+            class='list_item {{ currentI == index ? "active" : "" }}'
+            bindtap='onClick'
+            data-index="{{ index }}"
+            data-info="{{ item }}"
+        >
+            <text class='item_txt'>{{ item.txt }}</text>
+        </view>
+    </block>
+
+</view>

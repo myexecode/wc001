@@ -1,0 +1,22 @@
+<swiper 
+    class='swiper_box {{ typeModeArr[ _oConfig.typeMode ] }}'
+    autoplay
+    indicator-dots="{{ _oConfig.dots }}"
+    indicator-active-color="{{ _oConfig.acColor }}"
+    interval="{{ _oConfig.timer }}"
+    circular="{{ _oConfig.circular }}"
+    previous-margin="{{ _oConfig.prevMg }}"
+    next-margin="{{ _oConfig.nextMg }}"
+    bindchange="onAnimationfinish"
+>
+    <block wx:for="{{ dataLsit }}" wx:key="{{id || index}}">
+
+        <swiper-item class="swiper_item">
+            <image src='{{item.imgUrl}}' 
+                class='swiper_img {{ current == index ? "current_img" : "" }}' 
+                mode='aspectFill'
+            ></image>
+        </swiper-item>
+
+    </block>
+</swiper>

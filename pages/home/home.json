@@ -1,3 +1,10 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+      "m-swiper" : "/components/m-swiper/m-swiper",
+      "m-recommend": "./children/m-recommend/m-recommend",
+      "m-popular": "./children/m-popular/m-popular",
+      "m-tab": "/components/m-tab/m-tab",
+      "m-shoplist": "/components/m-shoplist/m-shoplist"
+  },
+  "navigationBarTitleText": "首页"
 }

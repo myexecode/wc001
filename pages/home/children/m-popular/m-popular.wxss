@@ -1,0 +1,8 @@
+/* pages/home/children/m-popular/m-popular.wxss */
+.img_box{
+    height: 100%;
+}
+.popular_img{
+    width: 100%;
+    height: 100%;
+}

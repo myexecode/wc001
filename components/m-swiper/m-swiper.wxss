@@ -1,0 +1,14 @@
+/* components/m-swiper/m-swiper.wxss */
+.swiper_box,.swiper_img{
+    width: 100%;
+    height: 100%;
+}
+.scal_mode .swiper_img{
+    transform: scale(0.92);
+    transition: 0.8s;
+    border-radius: 12rpx;
+}
+
+.scal_mode .current_img{
+    transform: scale(1);
+}

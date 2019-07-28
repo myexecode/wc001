@@ -1,0 +1,8 @@
+<view class='recommend'>
+    <block wx:for="{{ _recommended }}" wx:key="{{ id || index }}">
+        <view class='recommend_item'>
+            <view class='img' style='background:{{ item.imgUrl }}'></view>
+            <text class='txt'>{{ item.txt }}</text>
+        </view>
+    </block>
+</view>

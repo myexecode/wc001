@@ -1,3 +1,23 @@
-<!--pages/home/home.wxml-->
-<view class='title'>pages/home/home.wxml</view>
-<button size='mini'>点击</button>
+
+<!-- 轮播图 -->
+<view class='swiper_wrap'>
+    <m-swiper dataLsit="{{ bannerData }}" oConfig="{{ bannerConfig }}" />
+</view>
+
+<!-- 推荐 -->
+<m-recommend _recommended="{{ _recommended }}" />
+
+<!-- 本周流行 -->
+<view class='popular_wrap'>
+    <m-popular />
+</view>
+
+<!-- 分类tab-control -->
+<view class='tab_control_wrap'>
+    <m-tab dataList="{{ tabList }}" bind:tabChangeEvent="onTabChange" />
+</view>
+
+<!-- 商品列表 -->
+<view class='shop_list_wrap'>
+    <m-shoplist dataList="{{ category[currentShopType].list }}" />
+</view>

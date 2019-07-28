@@ -1,0 +1,14 @@
+.shop_list_box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.list_item{
+    width: 45%;
+    font-size: 32rpx;
+    padding: 10rpx 0;
+}
+.list_img{
+    width: 100%;
+    height: 300rpx;
+}

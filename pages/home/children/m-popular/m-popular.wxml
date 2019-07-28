@@ -1,0 +1,3 @@
+<view class='img_box'>
+    <image src="/assets/images/home/popular.jpg" class="popular_img" ></image>
+</view>

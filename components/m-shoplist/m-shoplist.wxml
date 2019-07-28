@@ -1,0 +1,10 @@
+<view class='shop_list_box'>
+
+    <block wx:for="{{ dataList }}" wx:key="{{ id || index }}">
+        <view class='list_item'>
+            <view class='list_img' style='background:{{ item.imgUrl }};'></view>
+            <view class='list_txt'>{{ item.title }}</view>
+        </view>
+    </block>
+
+</view>
