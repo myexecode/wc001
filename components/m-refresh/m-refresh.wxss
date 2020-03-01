@@ -12,5 +12,11 @@
     font-size: 28rpx;
     background: #ccc;
     text-align: center;
-    line-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tip_icon{
+    width: 60rpx;
+    height: 60rpx;
 }

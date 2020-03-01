@@ -9,7 +9,10 @@
         class="scroll_inner"
         style='transform: translateY({{ offsetHeight }}px);transition: {{ tstNum }}s transform;'
     >
-        <view class='pull_down_tip'>{{ pullDownTip }}</view>
+        <view class='pull_down_tip' style="height:{{_refreshTipHeight}}px;line-height:{{_refreshTipHeight}}px;">
+            <image hidden="{{refreshState!=2}}" src="/asstees/images/loading.gif" class="tip_icon"></image>
+            <text>{{ pullDownTip[refreshState] }}</text>
+        </view>
         <slot />
     </view>
     

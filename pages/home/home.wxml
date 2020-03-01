@@ -3,10 +3,16 @@
     <m-navbar />
 
     <!-- 内容区 -->
-    <m-refresh class="refresh_wrap">
+    <m-refresh id="refresh_wrap_id" 
+        class="refresh_wrap" 
+        bind:pullDownRefreshEvent="onPullDownRefreshEvent"
+        downRefreshDistance="{{50}}"
+    >
         <m-list />
     </m-refresh>
 
     <!-- 底部tabbar -->
     <m-tabbar />
+
+    <cover-view class="full_screen_cover" hidden="{{!isFullCover}}"></cover-view>
 </view>
