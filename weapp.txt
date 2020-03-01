@@ -1,0 +1,22 @@
+1， 微信小程序对 iPhone X 适配    
+webview: h5页面适配：
+    padding-top: constant(safe-area-inset-top);   //为导航栏+状态栏的高度 88px           
+
+    padding-left: constant(safe-area-inset-left);   //如果未竖屏时为0               
+
+    padding-right: constant(safe-area-inset-right); //如果未竖屏时为0               
+
+    padding-bottom: constant(safe-area-inset-bottom);//为底下圆弧的高度 34px     
+
+小程序本身：
+    -对于position: fixed的可交互组件，如果渲染在iPhone X的安全区域外，容易误触 Home Indicator，应当把可交互的部分都渲染到安全区域内。
+
+建议使用以下wxss进行兼容
+
+padding-bottom: constant(safe-area-inset-bottom);
+padding-bottom: env(safe-area-inset-bottom)
+     -在入口文件 app.js 中去进行检测，然后在全局增加一个 isIphoneX 字段。 
+
+状态栏高度可通过wx.getSystemInfoSync().statusBarHeight获取
+
+其他相关网址: https://www.jb51.net/article/158860.htm
